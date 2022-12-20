@@ -1,5 +1,5 @@
 var myName;    //variable declaration
-myName="Ajay Kumbhar"//variable initialisation
+myName="satyjeet"//variable initialisation
 console.log(myName)
 var myfriendName="sachin" //variable declaration and initialisation at same time
 console.log(myfriendName);
