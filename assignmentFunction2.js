@@ -6,3 +6,10 @@ function bankDetail(bankName,accountNumber,location,pincode){
     
 }
 bankDetail()
+function multi(value1,value2){
+   var result= value1*value2
+console.log(result);
+return result
+}
+var mresult=multi(1,33)
+var mresult=multi(2,33)

@@ -3,6 +3,9 @@ var square = function name(num1) {
   console.log("square of 5 =", result);
 };
 result = square(5);
+result = square(10);
+console.log(typeof square);
+
 var square = function name(num1) {
   var result = num1 * num1;
   console.log("square of 6 =", result);
@@ -29,7 +32,7 @@ console.log("area of rectangle=" , result);
 result=areaOfRectangle(499,917)
 console.log("-------------------------------------------");
 
-function swapValues (value1,value2){
+var swapValues= function  (value1,value2){
     console.log("before swap",value1,value2);
     var temp=value1;
     value1=value2
