@@ -16,3 +16,8 @@ console.log("Totalno of word available in string:",wordinsentence.length);
 var sentence ="i am react developer"
 var wordinsentence= sentence.split(" ")
 console.log("Multiple by the total word:",wordinsentence.length*wordinsentence.length);
+
+var Sname="java script"
+console.log(Sname);
+Tresult=typeof(Sname)
+console.log(Tresult);

@@ -1,8 +1,10 @@
 console.log("===two functions===");
+
 function cricketrName () {
 console.log("My favorite cricketer name:MS Dhoni");
 }
 cricketrName();
+
 function myHobbyName () {
     console.log("My favorite Hobby:Playing Cricket");
     }

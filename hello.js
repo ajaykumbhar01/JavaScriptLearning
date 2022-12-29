@@ -1,9 +1,14 @@
-var schoolName = "true"; 
-typeof schoolName;
-console.log(typeof schoolName);
-
-var exam = true
-typeof exam
-console.log(typeof exam);
-
+console.log(`Nested object`);
+const student = {
+    name: "Stew Jobs",
+    age: 50,
+    marks: {
+        science: 70,
+        math: 90,
+        english: 87
+    }
+}
+console.log(`Accessing an Nested object property`);
+const scienceMark =  student.marks.science;
+console.log(scienceMark);
 

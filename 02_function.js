@@ -15,7 +15,6 @@ function swapValues(value1,value2){
     value1=value2
     value2=temp
     console.log("after swap",value1,value2);
+    return 100;
 }
 swapValues(100,200);
-swapValues(2,4);
-swapValues("ajay","vijay");
