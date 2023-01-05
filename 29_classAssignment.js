@@ -20,14 +20,14 @@ console.log(Toyoto);
 console.log(`-------------------class for college---------------`);
 
 class College {
-  constructor(name, department, subbranch, intake) {
+  constructor(name, department, subBranch, intake) {
     this.name = name;
     this.department = department;
-    this.subbranch = subbranch;
+    this.subBranch = subBranch;
     this.intake = intake;
   }
   colgDetail() {
-    console.log(this.name,this.department,this.subbranch,this.intake);
+    console.log(this.name,this.department,this.subBranch,this.intake);
   }
 }
 let dyp=new College("dyp engineering college","mechanical","automobile",100)
@@ -38,3 +38,14 @@ dyp.colgDetail();
 RIT.colgDetail();
 KIT.colgDetail();
 IIT.colgDetail();
+console.log(`---------traverse object by using for in loop---------`);
+function traverseObject(dyp){
+  for (const key in dyp){
+    if (object.hasOwnProperty.call(dyp,key)) {
+      const element= dyp[key];
+      console.log(`${key}:${element}`);
+    }
+  }
+}
+traverseObject(dyp)
+

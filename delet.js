@@ -1,48 +1,51 @@
-const fruits_seasonal = ["Banana", "Orange", "Apple", "Mango", "Water Melon"];
-console.log(`Given array is :`) 
-console.log(fruits_seasonal);
-console.log(`###1. First and Last element`);
-let totalLength = fruits_seasonal.length;
-let firstElement = fruits_seasonal[0];
-let lastElement = fruits_seasonal[totalLength-1]
-console.log(`First element in given array is : ${firstElement} \n Last element in given array is: ${lastElement} `);
-console.log(``);
+var isMarried = true;
+
+let name = "John";
+let frdName = "Tom"
+name = frdName;
+
+const age = 23;
+// const frdAge = 25;
+// age = frdAge;// Not allowed
 
 
-console.log(`###2. Adding 'Papaya' before element 'Banana'`);
-fruits_seasonal.unshift('Papaya');
-console.log(fruits_seasonal);
-console.log(``);
+const anil = {
+    age: 23,
+    name: "Anil",
+    company: "Microsoft"
+}
+Object.freeze(anil);
+anil.country = "India";
+anil.age = 27;
+delete anil.company;
+console.log(anil);
 
-console.log(`###3. Remove 'Mango' from array`);
-const index = fruits_seasonal.indexOf("Mango");
-fruits_seasonal.splice(index,1)
-console.log(fruits_seasonal);
-console.log(``);
-
-console.log(`###4. Insert element 'Pineapple' at last position`);
-fruits_seasonal.push("Pineapple");
-console.log(fruits_seasonal);
-console.log(``);
-
-console.log(`###5.Inserting 'Dragon Fruit' before 'Water Melon'`);
-fruits_seasonal.splice(4,0,"Dragon Fruit");
-console.log(fruits_seasonal);
-console.log(``);
-
-console.log(`###6. Replacing 'Orange' with 'Kiwi'`);
-let indexOrange = fruits_seasonal.indexOf("Orange");
-fruits_seasonal.splice(indexOrange,1,"Kiwi");
-console.log(fruits_seasonal);
-console.log(``);
-
-
-console.log(`###7. Elements starting from index 1 to 4`);
-console.log(fruits_seasonal.slice(1,5));
-console.log(``);
-
-
-console.log(`###8. Selecting last 3 elements`);
-let res = fruits_seasonal.slice(-3);
-console.log(res);
-console.log(``);
+//const sunil = {
+//     age: 24,
+//     name: "Sunil",
+//     company: "Apple"
+// }
+// anil = sunil; // Not allowed
+// Array freezing 
+const arrayNumbers = [2, 4, 5, 8];
+// arrayNumbers = []; /// Not allowed
+// Freeze array
+Object.freeze(arrayNumbers);
+arrayNumbers.push(10);
+console.log(arrayNumbers);
+const sunilAddress = {
+    city : "Pune",
+    pin: "431202"
+}
+// Merging two object
+Object.assign(sunil,sunilAddress)
+console.log(sunil);
+for (const key in object) {
+    if (Object.hasOwnProperty.call(object, key)) {
+        const element = object[key];
+        
+    }
+}
+for (const iterator of object) {
+    
+}
